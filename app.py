@@ -35,15 +35,16 @@ with open('produtos.txt', 'r') as arquivo:
         preco = linha.split(',')[2]
         
         # Clicar e Digitar o produto
-        pyautogui.click(392, 372, duration=2)
+        pyautogui.click(392, 372, duration=0.5)
         pyautogui.write(produto)
 
-        pyautogui.click(391, 398, duration=2)
+        pyautogui.click(391, 398, duration=0.5)
         pyautogui.write(quantidade)
 
-        pyautogui.click(396, 426, duration=2)
+        pyautogui.click(396, 426, duration=0.5)
         pyautogui.write(preco)
 
-        pyautogui.click(323, 578, duration=1)
+        pyautogui.click(323, 578, duration=0.5)
         sleep(1)
 
+pyautogui.click(383, 584, duration=2)
